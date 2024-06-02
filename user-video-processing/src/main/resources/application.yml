@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: user-video-processing
+  datasource:
+    url: jdbc:postgresql://localhost:5432/youai-video-user
+    username: "postgres"
+    password: "Tomaszek"
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  mail:
+    host: smtp.gmail.com
+    username: youaiauth@gmail.com
+    password: husmiypjzacapofn
+    port: 587
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+          auth: true
